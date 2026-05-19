@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.37111.16 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "FormSubmissionApplication", "FormSubmissionApplication\FormSubmissionApplication.fsproj", "{5C71EB3F-ED7A-4679-B785-3728F89A96EE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5C71EB3F-ED7A-4679-B785-3728F89A96EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C71EB3F-ED7A-4679-B785-3728F89A96EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C71EB3F-ED7A-4679-B785-3728F89A96EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C71EB3F-ED7A-4679-B785-3728F89A96EE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {72855E0E-8578-4FAD-B118-A647D9765018}
+	EndGlobalSection
+EndGlobal
