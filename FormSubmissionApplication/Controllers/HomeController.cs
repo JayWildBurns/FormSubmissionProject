@@ -1,5 +1,6 @@
 using System.Diagnostics;
 using FormSubmissionApplication.Models;
+using System.Text.Json;
 using Microsoft.AspNetCore.Mvc;
 
 namespace FormSubmissionApplication.Controllers
@@ -8,14 +9,25 @@ namespace FormSubmissionApplication.Controllers
     {
         private readonly ILogger<HomeController> _logger;
 
-        public HomeController(ILogger<HomeController> logger)
-        {
-            _logger = logger;
-        }
-
+        [HttpGet]
         public IActionResult Index()
         {
             return View();
+        }
+
+        [HttpPost]
+        public IActionResult Index(UserNameModel model)
+        {
+            string json = JsonSerializer.Serialize(model);
+            System.IO.File.WriteAllText("user.json", json);
+
+            return View();
+        }
+
+
+        public HomeController(ILogger<HomeController> logger)
+        {
+            _logger = logger;
         }
 
         public IActionResult Privacy()
